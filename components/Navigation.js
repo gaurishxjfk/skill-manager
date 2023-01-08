@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { useSession } from "@supabase/auth-helpers-react";
+import { useSession as justSession } from "@supabase/auth-helpers-react";
+
 const Navigation = () => {
-  const session = useSession();
+  const session = justSession();
   return (
     <nav className="navbar">
       <Link href="/" className="navbar-link">
